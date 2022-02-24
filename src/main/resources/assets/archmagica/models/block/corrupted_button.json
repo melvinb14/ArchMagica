@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "archmagica:block/corrupted_planks"
+  }
+}

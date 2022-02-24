@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "archmagica:breccia_stone",
+    "archmagica:purgatory_stone",
+    "archmagica:runic_stone",
+    "archmagica:celestine_ore",
+    "archmagica:celestine_block",
+    "archmagica:edaphine_ore",
+    "archmagica:edaphine_block",
+    "archmagica:orichalgum_block",
+    "archmagica:ethril_block",
+    "archmagica:crimsonsteel_block",
+    "archmagica:soulsteel_block",
+    "archmagica:stygium_block",
+    "archmagica:stygium_ore",
+    "archmagica:orasine_ore",
+    "archmagica:orasine_block",
+    "archmagica:mythril_ore",
+    "archmagica:mythril_block",
+    "archmagica:jade_ore",
+    "archmagica:jade_block",
+    "archmagica:steel_block",
+    "archmagica:witch_oven",
+    "archmagica:blacksmith_anvil",
+    "archmagica:fallen_adventurer1",
+    "archmagica:fallen_adventurer2",
+    "archmagica:magic_crystal",
+    "archmagica:magic_crystal2",
+    "archmagica:magic_crystal3"
+  ]
+}

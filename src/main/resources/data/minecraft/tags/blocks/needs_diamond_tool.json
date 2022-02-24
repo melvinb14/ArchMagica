@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "archmagica:crimsonsteel_block",
+    "archmagica:soulsteel_block",
+    "archmagica:stygium_block",
+    "archmagica:stygium_ore",
+    "archmagica:celestine_ore",
+    "archmagica:celestine_block",
+    "archmagica:edaphine_ore",
+    "archmagica:edaphine_block",
+    "archmagica:orichalgum_block",
+    "archmagica:ethril_block"
+  ]
+}

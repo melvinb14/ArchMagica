@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "archmagica:corrupted_log",
+    "archmagica:corrupted_wood",
+    "archmagica:corrupted_planks",
+    "archmagica:stripped_corrupted_log",
+    "archmagica:stripped_corrupted_wood"
+
+  ]
+}

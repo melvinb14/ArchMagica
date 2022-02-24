@@ -1,0 +1,9 @@
+{
+   "parent": "block/orientable",
+   "textures": {
+       "top": "archmagica:block/corrupted_grass_top",
+       "bottom": "archmagica:block/corrupted_grass_bottom",
+       "front": "archmagica:block/corrupted_grass",
+       "side": "archmagica:block/corrupted_grass"
+   }
+}

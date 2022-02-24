@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "archmagica:jade_block",
+    "archmagica:jade_ore",
+    "archmagica:steel_block",
+    "archmagica:witch_oven",
+    "archmagica:blacksmith_anvil",
+    "archmagica:magic_crystal",
+    "archmagica:magic_crystal2",
+    "archmagica:magic_crystal3"
+  ]
+}

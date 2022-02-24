@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "archmagica:block/aaphush_flower",
+    "glow": "archmagica:block/aaphush_flower_glow"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "archmagica:orasine_block",
+    "archmagica:orasine_ore",
+    "archmagica:mythril_ore",
+    "archmagica:mythril_block"
+
+  ]
+}

@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/slab",
+	"textures": {
+		"bottom": "archmagica:block/breccia_stone",
+		"top": "archmagica:block/breccia_stone",
+		"side": "archmagica:block/breccia_stone"
+	}
+}

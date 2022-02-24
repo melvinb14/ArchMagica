@@ -1,0 +1,33 @@
+modLoader="javafml" #mandatory
+loaderVersion="[39,)" #mandatory
+license="MIT"
+[[mods]]
+modId="archmagica"
+version="${file.jarVersion}"
+displayName="Arch Magica"
+
+credits="Thanks for the tutorials Kaupenjoe and Turtywurty"
+authors="melvinbur"
+description='''
+a Magic Mod
+'''
+# A dependency
+[[dependencies.archmagica]]
+    #
+    modId="forge" #mandatory
+
+    mandatory=true #mandatory
+
+    versionRange="[39,)" #mandatory
+
+    ordering="NONE"
+
+    side="BOTH"
+
+[[dependencies.archmagica]]
+    modId="minecraft"
+    mandatory=true
+
+    versionRange="[1.18.1,1.19)"
+    ordering="NONE"
+    side="BOTH"
