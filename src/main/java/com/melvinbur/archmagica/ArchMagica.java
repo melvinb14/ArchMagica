@@ -1,7 +1,13 @@
 package com.melvinbur.archmagica;
 
 
+
 import com.melvinbur.archmagica.client.sound.SoundsInit;
+
+import com.melvinbur.archmagica.common.entitytypes.ArmoryEntityTypesInit;
+import com.melvinbur.archmagica.common.entitytypes.BlockEntitiesInit;
+
+import com.melvinbur.archmagica.common.util.event.ClientEventBusSubscriber;
 import com.melvinbur.archmagica.core.block.BlockInit;
 import com.melvinbur.archmagica.core.block.WoodTypeInit;
 
@@ -10,27 +16,33 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
+
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
-
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
 @Mod(ArchMagica.MOD_ID)
 public class ArchMagica {
     public static final String MOD_ID = "archmagica";
 
+
     // Directly reference a log4j logger.
+    public static final Logger LOGGER = LogManager.getLogger("archmagica");
+
 
 
 
@@ -45,6 +57,11 @@ public class ArchMagica {
         ItemInit.register(eventBus);
 
         SoundsInit.register(eventBus);
+        BlockEntitiesInit.register(eventBus);
+        ArmoryEntityTypesInit.register(eventBus);
+        eventBus.addListener(ClientEventBusSubscriber::clientSetup);
+
+
 
 
 
@@ -55,6 +72,19 @@ public class ArchMagica {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
+
+
+    @SubscribeEvent
+    public static void onCommonSetup(FMLCommonSetupEvent event) {
+        LOGGER.debug("Running common setup.");
+
+    }
+
+    public static ResourceLocation locate(String name) {
+        return new ResourceLocation("archmagica", name);
+    }
+
+
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(BlockInit.CORRUPTED_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.CORRUPTED_TRAPDOOR.get(), RenderType.cutout());
@@ -84,8 +114,11 @@ public class ArchMagica {
         event.enqueueWork(() -> {
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockInit.AAPHUSH_FLOWER.getId(), BlockInit.POTTED_AAPHUSH_FLOWER);
+            BlockEntityRenderers.register(BlockEntitiesInit.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
             Sheets.addWoodType(WoodTypeInit.CORRUPTED);
         });
+
+
 
 
     }

@@ -40,11 +40,12 @@ public class TagsInit {
                 createForgeTag("gems/jade");
         // Tag Types
         private static Tags.IOptionalNamedTag<Item> createTag(String name) {
-            return ItemTags.createOptional(new ResourceLocation(ArchMagica.MOD_ID, name));
+            return ItemTags.createOptional(new ResourceLocation("archmagica", name));
         }
 
         private static Tags.IOptionalNamedTag<Item> createForgeTag(String name) {
             return ItemTags.createOptional(new ResourceLocation("forge", name));
         }
+
     }
 }

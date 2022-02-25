@@ -1,0 +1,11 @@
+{
+	"parent": "archmagica:item/diamond_spear",
+	"textures": {
+		"layer0": "archmagica:item/iron/iron_spear"
+	},
+	"overrides": [
+		{
+			"predicate": { "throwing": 1 }, "model": "archmagica:item/iron_spear_throwing"
+		}
+	]
+}

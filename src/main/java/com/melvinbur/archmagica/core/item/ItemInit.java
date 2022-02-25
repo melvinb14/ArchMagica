@@ -2,17 +2,25 @@ package com.melvinbur.archmagica.core.item;
 
 import com.melvinbur.archmagica.ArchMagica;
 
+import com.melvinbur.archmagica.configs.CreativeModeTabInit;
+import com.melvinbur.archmagica.core.block.BlockInit;
 import com.melvinbur.archmagica.core.material.CustomArmorMaterial;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.Rarity;
 
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+
+
 public class ItemInit {
+
+
+
+
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ArchMagica.MOD_ID);
 
@@ -147,6 +155,10 @@ public class ItemInit {
     // Buckets & Signs
     public static final RegistryObject<Item> OMINOUS_FLUID_BUCKET = ITEMS.register("ominous_fluid_bucket",
             () -> new Item(new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB)));
+
+    public static final RegistryObject<Item> CORRUPTED_SIGN_ITEM = ITEMS.register("corrupted_sign",
+            () -> new SignItem(new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB2).stacksTo(16),
+                    BlockInit.CORRUPTED_SIGN.get(), BlockInit.CORRUPTED_WALL_SIGN.get()));
 
 
 
@@ -439,6 +451,26 @@ public class ItemInit {
     public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
             () -> new ArmorItem(CustomArmorMaterial.STEEL, EquipmentSlot.FEET,
                     new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3)));
+
+
+
+    // Weapons
+
+    public static final RegistryObject<SpearItem> IRON_SPEAR =  ITEMS.register("iron_spear",
+            () -> new SpearItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+
+    public static final RegistryObject<DaggerItem> IRON_DAGGER =  ITEMS.register("iron_dagger",
+            () -> new DaggerItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+
+    public static final RegistryObject<MaceItem> IRON_MACE =  ITEMS.register("iron_mace",
+            () -> new MaceItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+
+    public static final RegistryObject<HalberdItem> IRON_HALBERD =  ITEMS.register("iron_halberd",
+            () -> new HalberdItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+
+    public static final RegistryObject<BattleaxeItem> IRON_BATTLEAXE =  ITEMS.register("iron_halberd",
+            () -> new BattleaxeItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+
 
 
 

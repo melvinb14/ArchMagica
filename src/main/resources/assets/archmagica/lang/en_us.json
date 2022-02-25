@@ -193,11 +193,21 @@
 	"block.archmagica.witch_oven": "Witch Oven",
 	"block.archmagica.waterplant": "Waterplant",
 	"fluid.archmagica.ominous": "ominous",
-	"container.archmagica.crafting": "",
-	"container.archmagica.witch_oven": ""
-	
-	
-	
-	
-	
+	"entity.archmagica.iron_spear": "Iron Spear",
+
+	"item.archmagica.iron_spear" : "Iron Spear",
+	"item.archmagica.diamond_spear" : "Diamond Spear",
+
+	"item.archmagica.iron_dagger" : "Iron Dagger",
+	"item.archmagica.diamond_dagger" : "Diamond Dagger",
+
+	"item.archmagica.iron_battleaxe" : "Iron BattleAxe",
+	"item.archmagica.diamond_battleaxe" : "Diamond BattleAxe",
+
+	"item.archmagica.iron_halberd" : "Iron Halberd",
+	"item.archmagica.diamond_halberd" : "Diamond Halberd",
+
+	"item.archmagica.iron_mace" : "Iron Mace",
+	"item.archmagica.diamond_mace" : "Diamond Mace"
+
 }

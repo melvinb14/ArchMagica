@@ -1,0 +1,6 @@
+{
+	"parent": "archmagica:item/diamond_spear_throwing",
+	"textures": {
+		"layer0": "archmagica:item/iron/iron_spear"
+	}
+}

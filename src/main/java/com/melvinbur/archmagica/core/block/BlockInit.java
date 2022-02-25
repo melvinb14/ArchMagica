@@ -1,6 +1,6 @@
 package com.melvinbur.archmagica.core.block;
 import com.melvinbur.archmagica.ArchMagica;
-import com.melvinbur.archmagica.core.item.CreativeModeTabInit;
+import com.melvinbur.archmagica.configs.CreativeModeTabInit;
 import com.melvinbur.archmagica.core.item.ItemInit;
 import com.melvinbur.archmagica.core.world.gen.features.trees.CorruptedTreeGrower;
 import net.minecraft.core.BlockPos;
@@ -119,10 +119,10 @@ public class BlockInit {
     // Stairs, ETC
 
    public static final RegistryObject<Block> CORRUPTED_SIGN = BLOCKS.register("corrupted_sign",
-            () -> new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodTypeInit.CORRUPTED));
+            () -> new StandingSignBlockInit(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodTypeInit.CORRUPTED));
 
     public static final RegistryObject<Block> CORRUPTED_WALL_SIGN = BLOCKS.register("corrupted_wall_sign",
-            () -> new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodTypeInit.CORRUPTED));
+            () -> new WallSignBlockInit(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodTypeInit.CORRUPTED));
 
     public static final RegistryObject<Block> CORRUPTED_STAIRS = registerBlock("corrupted_stairs",
             () -> new StairBlock(() -> CORRUPTED_PLANKS.get().defaultBlockState(),

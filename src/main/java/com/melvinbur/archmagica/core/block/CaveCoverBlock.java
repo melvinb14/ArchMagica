@@ -70,9 +70,9 @@ public class CaveCoverBlock extends HorizontalDirectionalBlock implements Simple
 
     }
 
-    public VoxelShape getCollisionShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
-        return Shapes.empty();
-    }
+
+
+
 
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult brt) {
         world.removeBlock(pos, true);
@@ -81,10 +81,6 @@ public class CaveCoverBlock extends HorizontalDirectionalBlock implements Simple
         }
 
         return InteractionResult.SUCCESS;
-    }
-
-    public OffsetType getOffsetType() {
-        return OffsetType.XZ;
     }
 
 

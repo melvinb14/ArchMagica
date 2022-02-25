@@ -1,6 +1,7 @@
-package com.melvinbur.archmagica.core.item;
+package com.melvinbur.archmagica.configs;
 
 import com.melvinbur.archmagica.core.block.BlockInit;
+import com.melvinbur.archmagica.core.item.ItemInit;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
