@@ -4,7 +4,6 @@ package com.melvinbur.archmagica;
 
 import com.melvinbur.archmagica.client.sound.SoundsInit;
 
-import com.melvinbur.archmagica.common.entitytypes.ArmoryEntityTypesInit;
 import com.melvinbur.archmagica.common.entitytypes.BlockEntitiesInit;
 
 import com.melvinbur.archmagica.common.util.event.ClientEventBusSubscriber;
@@ -58,7 +57,7 @@ public class ArchMagica {
 
         SoundsInit.register(eventBus);
         BlockEntitiesInit.register(eventBus);
-        ArmoryEntityTypesInit.register(eventBus);
+
         eventBus.addListener(ClientEventBusSubscriber::clientSetup);
 
 

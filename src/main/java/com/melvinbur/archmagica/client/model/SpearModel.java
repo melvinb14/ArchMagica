@@ -15,7 +15,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 
 public class SpearModel extends Model {
-    public static ResourceLocation TEXTURE_LOCATION = new ResourceLocation(ArchMagica.MOD_ID, "textures/item/spear_iron.png");
+    public static ResourceLocation TEXTURE_LOCATION = new ResourceLocation("archmagica", "textures/item/spear_iron.png");
     private final ModelPart root;
 
     public SpearModel(ModelPart p_171016_) {

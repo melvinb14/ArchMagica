@@ -456,11 +456,10 @@ public class ItemInit {
 
     // Weapons
 
-    public static final RegistryObject<SpearItem> IRON_SPEAR =  ITEMS.register("iron_spear",
-            () -> new SpearItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
 
-    public static final RegistryObject<DaggerItem> IRON_DAGGER =  ITEMS.register("iron_dagger",
-            () -> new DaggerItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+
+    public static final RegistryObject<ThinSwordItem> IRON_THIN_SWORD =  ITEMS.register("iron_thin_sword",
+            () -> new ThinSwordItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
 
     public static final RegistryObject<MaceItem> IRON_MACE =  ITEMS.register("iron_mace",
             () -> new MaceItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
@@ -468,7 +467,7 @@ public class ItemInit {
     public static final RegistryObject<HalberdItem> IRON_HALBERD =  ITEMS.register("iron_halberd",
             () -> new HalberdItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
 
-    public static final RegistryObject<BattleaxeItem> IRON_BATTLEAXE =  ITEMS.register("iron_halberd",
+    public static final RegistryObject<BattleaxeItem> IRON_BATTLEAXE =  ITEMS.register("iron_battleaxe",
             () -> new BattleaxeItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
 
 

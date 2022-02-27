@@ -1,17 +1,14 @@
 package com.melvinbur.archmagica.common.util.event;
 
 import com.melvinbur.archmagica.ArchMagica;
-import com.melvinbur.archmagica.client.model.SpearEntityRenderer;
-import com.melvinbur.archmagica.common.entitytypes.ArmoryEntityTypesInit;
 import com.melvinbur.archmagica.core.item.HalberdItem;
 import com.melvinbur.archmagica.core.item.ItemInit;
-import com.melvinbur.archmagica.core.item.SpearItem;
 
-import net.minecraft.client.renderer.entity.EntityRenderers;
+
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 
-import net.minecraft.world.entity.EntityType;
+
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -30,7 +27,7 @@ public class ClientEventBusSubscriber {
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
         ArchMagica.LOGGER.debug("Running client setup.");
-        EntityRenderers.register((EntityType) ArmoryEntityTypesInit.SPEAR.get(), SpearEntityRenderer::new);
+
         event.enqueueWork(() -> {
 
 
@@ -51,16 +48,7 @@ public class ClientEventBusSubscriber {
                     });
                 }
 
-            SpearItem[] spears = new SpearItem[]{(SpearItem) ItemInit.IRON_SPEAR.get()};
-                SpearItem[] var9 = spears;
-                var10 = spears.length;
 
-                for (int var11 = 0; var11 < var10; ++var11) {
-                    SpearItem spearItem = var9[var11];
-                    ItemProperties.register(spearItem, new ResourceLocation("throwing"), (spearStack, clientLevel, living, k) -> {
-                        return living != null && living.isUsingItem() && living.getUseItem() == spearStack ? 1.0F : 0.0F;
-                    });
-                }
             }
         });
     }

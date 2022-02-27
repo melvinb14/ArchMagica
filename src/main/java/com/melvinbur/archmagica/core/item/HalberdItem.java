@@ -12,7 +12,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.Item.Properties;
+
 import net.minecraft.world.level.Level;
 
 public class HalberdItem extends SwordItem implements ICustomReachItem {

@@ -7,12 +7,12 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
-import net.minecraft.world.item.Item.Properties;
 
-public class DaggerItem extends SwordItem implements ICustomReachItem {
+
+public class ThinSwordItem extends SwordItem implements ICustomReachItem {
     private Multimap<Attribute, AttributeModifier> customAttributes;
 
-    public DaggerItem(Tiers tier, int attackDamageIn, Properties builderIn) {
+    public ThinSwordItem(Tiers tier, int attackDamageIn, Properties builderIn) {
         super(tier, attackDamageIn, -2.0F, builderIn);
     }
 

@@ -1,6 +1,6 @@
 {
-	"parent": "archmagica:item/diamond_dagger",
-	"textures": {
-		"layer0": "archmagica:item/iron/iron_dagger"
-	}
+  "parent": "archmagica:item/diamond_dagger",
+  "textures": {
+    "layer0": "archmagica:item/iron/iron_dagger"
+  }
 }
