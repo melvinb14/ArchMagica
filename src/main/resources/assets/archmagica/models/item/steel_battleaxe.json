@@ -1,0 +1,6 @@
+{
+  "parent": "archmagica:item/diamond_battleaxe",
+  "textures": {
+    "layer0": "archmagica:item/steel/steel_battleaxe"
+  }
+}

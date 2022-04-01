@@ -2,6 +2,8 @@ package com.melvinbur.archmagica.core.item;
 
 
 
+
+import com.melvinbur.archmagica.core.sounds.SoundInit;
 import com.mojang.math.Vector3f;
 import java.util.Iterator;
 import java.util.List;
@@ -14,7 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.DustParticleOptions;
-import net.minecraft.sounds.SoundEvents;
+
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -44,11 +46,17 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult.Type;
 import net.minecraftforge.common.ForgeMod;
+import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.common.ToolAction;
 
 public class MaceItem extends SwordItem implements ICustomAnimationItem {
     public MaceItem(Tiers tier, int attackDamageIn, Properties builderIn) {
         super(tier, attackDamageIn, -3.2F, builderIn);
+    }
+
+        public MaceItem(ForgeTier tier, int attackDamageIn, Properties builderIn) {
+            super(tier, attackDamageIn, -3.2F, builderIn);
+
     }
 
     @ParametersAreNonnullByDefault
@@ -98,7 +106,7 @@ public class MaceItem extends SwordItem implements ICustomAnimationItem {
                     }
                 } else {
                     this.smashParticles(vec, level, blockPos);
-                    level.playSound(player, vec.x, vec.y, vec.z, SoundEvents.DRAGON_FIREBALL_EXPLODE, SoundSource.PLAYERS, 1.0F, 1.0F);
+                    level.playSound(player, vec.x, vec.y, vec.z, SoundInit.MACE_SLAM.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
                 }
             }
         }
@@ -145,7 +153,7 @@ public class MaceItem extends SwordItem implements ICustomAnimationItem {
             } while(pet.getOwner() == player);
 
             double entityDistance = Math.sqrt(entity.distanceToSqr(vec));
-            if (entityDistance <= 4.0D) {
+            if (entityDistance <= 2.0D) {
                 float seenPercent = Explosion.getSeenPercent(vec, entity);
                 float maceEnchantment;
                 float otherMaceEnchantment;
@@ -166,9 +174,9 @@ public class MaceItem extends SwordItem implements ICustomAnimationItem {
                 }
             }
 
-            if (entityDistance <= 5.0D && entity instanceof LivingEntity) {
+            if (entityDistance <= 2.0D && entity instanceof LivingEntity) {
                 LivingEntity living = (LivingEntity)entity;
-                living.knockback(0.10000000149011612D * Math.abs(entityDistance - 5.0D) + entityDistance > 4.0D ? 0.4000000059604645D : 0.0D, vec.x - entity.getX(), vec.z - entity.getZ());
+                living.knockback(0.10000000149011612D * Math.abs(entityDistance - 2.0D) + entityDistance > 4.0D ? 0.4000000059604645D : 0.0D, vec.x - entity.getX(), vec.z - entity.getZ());
             }
         }
     }

@@ -1,0 +1,6 @@
+{
+  "parent": "archmagica:item/diamond_halberd_block",
+  "textures": {
+    "layer0": "archmagica:item/stygium/stygium_halberd"
+  }
+}

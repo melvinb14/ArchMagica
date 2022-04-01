@@ -14,6 +14,7 @@ import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.UseAnim;
 
 import net.minecraft.world.level.Level;
+import net.minecraftforge.common.ForgeTier;
 
 public class HalberdItem extends SwordItem implements ICustomReachItem {
     private final double reachDistanceBonus;
@@ -23,10 +24,22 @@ public class HalberdItem extends SwordItem implements ICustomReachItem {
         this(tier, attackDamageIn, builderIn, 2.0D);
     }
 
+    public HalberdItem(ForgeTier tier, int attackDamageIn, Properties builderIn) {
+        this(tier, attackDamageIn, builderIn, 2.0D);
+
+    }
+
     public HalberdItem(Tiers tier, int attackDamageIn, Properties builderIn, double reachDistanceBonus) {
         super(tier, attackDamageIn, -3.4F, builderIn);
         this.reachModifiers = null;
         this.reachDistanceBonus = reachDistanceBonus;
+    }
+
+    public HalberdItem(ForgeTier tier, int attackDamageIn, Properties builderIn, double reachDistanceBonus) {
+        super(tier, attackDamageIn, -3.4F, builderIn);
+        this.reachModifiers = null;
+        this.reachDistanceBonus = reachDistanceBonus;
+
     }
 
     public UseAnim getUseAnimation(ItemStack p_77661_1_) {

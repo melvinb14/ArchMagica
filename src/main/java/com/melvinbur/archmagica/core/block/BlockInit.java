@@ -5,6 +5,7 @@ import com.melvinbur.archmagica.core.item.ItemInit;
 import com.melvinbur.archmagica.core.world.gen.features.trees.CorruptedTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.BlockGetter;
@@ -299,44 +300,44 @@ public class BlockInit {
 
 
     public static final RegistryObject<Block> EDAPHINE_ORE	= registerBlock("edaphine_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(10f, 7f).requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> STYGIUM_ORE	= registerBlock("stygium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(8f, 6f).requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> STYGIUM_DEEPSLATE_ORE	= registerBlock("stygium_deepslate_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(9.5f, 6f).requiresCorrectToolForDrops()
                     .sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> ORASINE_ORE	= registerBlock("orasine_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(7.5f, 6f).requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> MYTHRIL_ORE	= registerBlock("mythril_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(7f, 6f).requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> MYTHRIL_DEEPSLATE_ORE	= registerBlock("mythril_deepslate_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(8.5f, 6f).requiresCorrectToolForDrops()
                     .sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> JADE_ORE	= registerBlock("jade_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5f, 6f).requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
+                    .sound(SoundType.STONE), UniformInt.of(2, 4)));
 
     public static final RegistryObject<Block> JADE_DEEPSLATE_ORE	= registerBlock("jade_deepslate_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6.5f, 6f).requiresCorrectToolForDrops()
-                    .sound(SoundType.DEEPSLATE)));
+                    .sound(SoundType.DEEPSLATE), UniformInt.of(2, 4)));
 
 
 

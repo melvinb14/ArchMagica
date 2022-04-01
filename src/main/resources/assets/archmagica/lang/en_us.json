@@ -198,16 +198,43 @@
 	"item.archmagica.iron_spear" : "Iron Spear",
 	"item.archmagica.diamond_spear" : "Diamond Spear",
 
-	"item.archmagica.iron_dagger" : "Iron Dagger",
-	"item.archmagica.diamond_dagger" : "Diamond Dagger",
+	"item.archmagica.iron_thinsword" : "Iron ThinSword",
+	"item.archmagica.diamond_thinsword" : "Diamond ThinSword",
+	"item.archmagica.jade_thinsword" : "Jade ThinSword",
+	"item.archmagica.steel_thinsword" : "Steel ThinSword",
+	"item.archmagica.mythril_thinsword" : "Mythril ThinSword",
+	"item.archmagica.orasine_thinsword" : "Orasine ThinSword",
+	"item.archmagica.stygium_thinsword" : "Stygium ThinSword",
 
 	"item.archmagica.iron_battleaxe" : "Iron BattleAxe",
 	"item.archmagica.diamond_battleaxe" : "Diamond BattleAxe",
+	"item.archmagica.jade_battleaxe" : "Jade BattleAxe",
+	"item.archmagica.steel_battleaxe" : "Steel BattleAxe",
+	"item.archmagica.mythril_battleaxe" : "Mythril BattleAxe",
+	"item.archmagica.orasine_battleaxe" : "Orasine BattleAxe",
+	"item.archmagica.stygium_battleaxe" : "Stygium BattleAxe",
 
 	"item.archmagica.iron_halberd" : "Iron Halberd",
 	"item.archmagica.diamond_halberd" : "Diamond Halberd",
+	"item.archmagica.jade_halberd" : "Jade Halberd",
+	"item.archmagica.steel_halberd" : "Steel Halberd",
+	"item.archmagica.mythril_halberd" : "Mythril Halberd",
+	"item.archmagica.orasine_halberd" : "Orasine Halberd",
+	"item.archmagica.stygium_halberd" : "Stygium Halberd",
+
+	"item.archmagica.iron_mercenarysword" : "Iron Mercenary Sword",
+	"item.archmagica.diamond_mercenarysword" : "Diamond Mercenary Sword",
+	"item.archmagica.jade_mercenarysword" : "Jade Mercenary Sword",
+	"item.archmagica.steel_mercenarysword" : "Steel Mercenary Sword",
+	"item.archmagica.mythril_mercenarysword" : "Mythril Mercenary Sword",
+	"item.archmagica.orasine_mercenarysword" : "Orasine Mercenary Sword",
+	"item.archmagica.stygium_mercenarysword" : "Stygium Mercenary Sword",
 
 	"item.archmagica.iron_mace" : "Iron Mace",
-	"item.archmagica.diamond_mace" : "Diamond Mace"
-
+	"item.archmagica.diamond_mace" : "Diamond Mace",
+	"item.archmagica.jade_mace" : "Jade Mace",
+	"item.archmagica.steel_mace" : "Steel Mace",
+	"item.archmagica.mythril_mace" : "Mythril Mace",
+	"item.archmagica.orasine_mace" : "Orasine Mace",
+	"item.archmagica.stygium_mace" : "Stygium Mace"
 }

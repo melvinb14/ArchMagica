@@ -1,4 +1,4 @@
-package com.melvinbur.archmagica.client.sound;
+package com.melvinbur.archmagica.core.sounds;
 
 import com.melvinbur.archmagica.ArchMagica;
 import net.minecraft.resources.ResourceLocation;
@@ -8,9 +8,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class SoundsInit {
+public class SoundInit {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, ArchMagica.MOD_ID);
+
+    public static RegistryObject<SoundEvent> MACE_SLAM
+            = registerSoundEvents("mace_slam");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         ResourceLocation id = new ResourceLocation(ArchMagica.MOD_ID, name);

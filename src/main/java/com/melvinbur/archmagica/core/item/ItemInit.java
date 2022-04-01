@@ -453,22 +453,100 @@ public class ItemInit {
                     new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3)));
 
 
-
     // Weapons
 
 
+    // Thinsword
+    public static final RegistryObject<ThinSwordItem> IRON_THINSWORD =  ITEMS.register("iron_thinsword",
+            () -> new ThinSwordItem(Tiers.IRON, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
 
-    public static final RegistryObject<ThinSwordItem> IRON_THIN_SWORD =  ITEMS.register("iron_thin_sword",
-            () -> new ThinSwordItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+    public static final RegistryObject<ThinSwordItem> JADE_THINSWORD =  ITEMS.register("jade_thinsword",
+            () -> new ThinSwordItem(TiersInit.JADE, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
 
+    public static final RegistryObject<ThinSwordItem> STEEL_THINSWORD =  ITEMS.register("steel_thinsword",
+            () -> new ThinSwordItem(TiersInit.STEEL, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<ThinSwordItem> MYTHRIL_THINSWORD =  ITEMS.register("mythril_thinsword",
+            () -> new ThinSwordItem(TiersInit.MYTHRIL, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<ThinSwordItem> ORASINE_THINSWORD =  ITEMS.register("orasine_thinsword",
+            () -> new ThinSwordItem(TiersInit.ORASINE, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<ThinSwordItem> STYGIUM_THINSWORD =  ITEMS.register("stygium_thinsword",
+            () -> new ThinSwordItem(TiersInit.STYGIUM, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    // Herosword
+    public static final RegistryObject<HeroSwordItem> IRON_HEROSWORD =  ITEMS.register("iron_herosword",
+            () -> new HeroSwordItem(Tiers.IRON, 3, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<HeroSwordItem> DIAMOND_HEROSWORD =  ITEMS.register("diamond_herosword",
+            () -> new HeroSwordItem(Tiers.DIAMOND, 3, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<HeroSwordItem> STEEL_HEROSWORD =  ITEMS.register("steel_herosword",
+            () -> new HeroSwordItem(TiersInit.STEEL, 3, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    // Mercenarysword
+    public static final RegistryObject<MercenarySwordItem> IRON_MERCENARYSWORD =  ITEMS.register("iron_mercenarysword",
+            () -> new MercenarySwordItem(Tiers.IRON, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<MercenarySwordItem> DIAMOND_MERCENARYSWORD =  ITEMS.register("diamond_mercenarysword",
+            () -> new MercenarySwordItem(Tiers.DIAMOND, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<MercenarySwordItem> STEEL_MERCENARYSWORD =  ITEMS.register("steel_mercenarysword",
+            () -> new MercenarySwordItem(TiersInit.STEEL, 2, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    // Mace
     public static final RegistryObject<MaceItem> IRON_MACE =  ITEMS.register("iron_mace",
-            () -> new MaceItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+            () -> new MaceItem(Tiers.IRON, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
 
+    public static final RegistryObject<MaceItem> DIAMOND_MACE =  ITEMS.register("diamond_mace",
+            () -> new MaceItem(Tiers.DIAMOND, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<MaceItem> STEEL_MACE =  ITEMS.register("steel_mace",
+            () -> new MaceItem(TiersInit.STEEL, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    // Halberd
     public static final RegistryObject<HalberdItem> IRON_HALBERD =  ITEMS.register("iron_halberd",
-            () -> new HalberdItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+            () -> new HalberdItem(Tiers.IRON, 6, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
 
+    public static final RegistryObject<HalberdItem> DIAMOND_HALBERD =  ITEMS.register("diamond_halberd",
+            () -> new HalberdItem(Tiers.DIAMOND, 6, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<HalberdItem> JADE_HALBERD =  ITEMS.register("jade_halberd",
+            () -> new HalberdItem(TiersInit.JADE, 6, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<HalberdItem> STEEL_HALBERD =  ITEMS.register("steel_halberd",
+            () -> new HalberdItem(TiersInit.STEEL, 6, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<HalberdItem> MYTHRIL_HALBERD =  ITEMS.register("mythril_halberd",
+            () -> new HalberdItem(TiersInit.MYTHRIL, 6, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<HalberdItem> ORASINE_HALBERD =  ITEMS.register("orasine_halberd",
+            () -> new HalberdItem(TiersInit.ORASINE, 6, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<HalberdItem> STYGIUM_HALBERD =  ITEMS.register("stygium_halberd",
+            () -> new HalberdItem(TiersInit.STYGIUM, 6, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+
+
+    // Battleaxe
     public static final RegistryObject<BattleaxeItem> IRON_BATTLEAXE =  ITEMS.register("iron_battleaxe",
-            () -> new BattleaxeItem(Tiers.IRON, 3, (new Item.Properties().rarity(Rarity.UNCOMMON).durability(250).tab(CreativeModeTabInit.ARCHMAGICA_TAB2))));
+            () -> new BattleaxeItem(Tiers.IRON, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<BattleaxeItem> JADE_BATTLEAXE =  ITEMS.register("jade_battleaxe",
+            () -> new BattleaxeItem(TiersInit.JADE, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<BattleaxeItem> STEEL_BATTLEAXE =  ITEMS.register("steel_battleaxe",
+            () -> new BattleaxeItem(TiersInit.STEEL, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<BattleaxeItem> ORASINE_BATTLEAXE =  ITEMS.register("orasine_battleaxe",
+            () -> new BattleaxeItem(TiersInit.ORASINE, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<BattleaxeItem> MYTHRIL_BATTLEAXE =  ITEMS.register("mythril_battleaxe",
+            () -> new BattleaxeItem(TiersInit.MYTHRIL, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
+
+    public static final RegistryObject<BattleaxeItem> STYGIUM_BATTLEAXE =  ITEMS.register("stygium_battleaxe",
+            () -> new BattleaxeItem(TiersInit.STYGIUM, 4, (new Item.Properties().tab(CreativeModeTabInit.ARCHMAGICA_TAB3))));
 
 
 

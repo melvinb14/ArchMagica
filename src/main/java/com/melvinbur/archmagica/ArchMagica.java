@@ -2,7 +2,7 @@ package com.melvinbur.archmagica;
 
 
 
-import com.melvinbur.archmagica.client.sound.SoundsInit;
+
 
 import com.melvinbur.archmagica.common.entitytypes.BlockEntitiesInit;
 
@@ -11,6 +11,7 @@ import com.melvinbur.archmagica.core.block.BlockInit;
 import com.melvinbur.archmagica.core.block.WoodTypeInit;
 
 import com.melvinbur.archmagica.core.item.ItemInit;
+import com.melvinbur.archmagica.core.sounds.SoundInit;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 
@@ -55,7 +56,7 @@ public class ArchMagica {
         BlockInit.register(eventBus);
         ItemInit.register(eventBus);
 
-        SoundsInit.register(eventBus);
+        SoundInit.register(eventBus);
         BlockEntitiesInit.register(eventBus);
 
         eventBus.addListener(ClientEventBusSubscriber::clientSetup);

@@ -1,0 +1,6 @@
+{
+  "parent": "archmagica:item/diamond_thinsword",
+  "textures": {
+    "layer0": "archmagica:item/iron/iron_thinsword"
+  }
+}

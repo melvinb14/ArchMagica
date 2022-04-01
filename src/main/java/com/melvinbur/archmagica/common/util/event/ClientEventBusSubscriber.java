@@ -36,7 +36,9 @@ public class ClientEventBusSubscriber {
             int var2;
             for (var2 = 0; var2 < var1; ++var2) {
 
-                HalberdItem[] halberds = new HalberdItem[]{(HalberdItem) ItemInit.IRON_HALBERD.get()};
+                HalberdItem[] halberds = new HalberdItem[]{(HalberdItem)
+                        ItemInit.IRON_HALBERD.get(), (HalberdItem)ItemInit.DIAMOND_HALBERD.get(), (HalberdItem)ItemInit.JADE_HALBERD.get(),
+                        (HalberdItem)ItemInit.STEEL_HALBERD.get(), (HalberdItem)ItemInit.MYTHRIL_HALBERD.get(), (HalberdItem)ItemInit.ORASINE_HALBERD.get(), (HalberdItem)ItemInit.STYGIUM_HALBERD.get()};
                 HalberdItem[] var7 = halberds;
                 var2 = halberds.length;
 
